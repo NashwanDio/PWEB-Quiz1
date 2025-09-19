@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- Site title -->
+    <title>Hometown - Nashwan Rasyid Muhammad's Website</title>
+
+    <!-- Site description -->
+    <meta content="A page about my hometown, Surabaya." name="description" />
+
+    <!-- Setting character encoding and viewport size. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FavIcon -->
+    <link href="favicon.ico" rel="icon" type="image/x-icon" />
+
+    <!-- CSS -->
+    <link href="./style.css" rel="stylesheet" />
+    
+    <script>
+      // Template generated with petrapixel's layout generator.
+      console.log("%cTemplate generated with petrapixel's layout generator: https://petrapixel.neocities.org/coding/layout-generator", "font-size: 14pt; color: #922a45; background: #ffd3ef");
+    </script>
+  </head>
+  <body>
+    <audio id="background-music" src="Surabaya.mp3" loop></audio>
+    <!-- Skip-to-content link for keyboard users -->
+    <a href="#content" id="skip-to-content-link">Skip to content</a>
+
+    <div class="layout">
+ 
+      <!-- =============================================== -->
+      <!-- HEADER -->
+      <!-- =============================================== -->
+
+      <header>
+        <div class="header-content">
+          <div class="header-title">Nashwan Rasyid Muhammad's Website</div>
+          
+          <!-- NAVIGATION -->
+          <nav>
+            <ul>
+              <li><a href="./index.html">Homepage</a></li>
+              <li><a href="./profile.html">Profile</a></li>
+              <li><a href="./hometown.html">Hometown</a></li>
+              <li><a href="./local-food.html">Local Food</a></li>
+              <li><a href="./tourist-places.html">Tourist Places</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main id="content">
+
+        <!-- =============================================== -->
+        <!-- MAIN CONTENT -->
+        <!-- =============================================== -->
+
+        <section>
+            <center>
+          <h1>~*~ Welcome to Surabaya! ~*~</h1>
+          </center>
+          <marquee behavior="scroll" direction="left" style="font-weight: bold; color: navy;">
+            The City of Heroes! ... The City of Heroes! ... The City of Heroes!
+          </marquee>
+
+          <button id="play-pause-btn" style="display: block; margin: 10px auto; padding: 5px 10px; cursor: pointer;">Play Music</button>
+
+          <p>
+            Welcome to my hometown, <b>Surabaya</b>! It's the capital of East Java and the second-largest city in Indonesia. Surabaya is famously known as <i>"Kota Pahlawan"</i> (the "City of Heroes") because of the importance of the Battle of Surabaya in galvanizing Indonesian support for independence during the Indonesian National Revolution.
+          </p>
+          
+          <center>
+            <img src="tugu-pahlawan.jpg" alt="The Heroes Monument (Tugu Pahlawan) in Surabaya" style="border: 2px solid black; margin-top: 10px; margin-bottom: 5px;">
+          </center>
+        <p>
+            Tugu Pahlawan is one of the main landmarks of the city, it was created to commemmorate the heroes who liberated Surabaya from the colonizers in the battle of Surabaya at November 10th 1945
+        </p>          
+          <hr>
+
+          <h2>A Bustling Port City</h2>
+          <p>
+            Surabaya has always been a major trading hub in Southeast Asia. The Port of Tanjung Perak is one of the busiest in the country. The city is a vibrant mix of modern skyscrapers, colonial-era buildings, and bustling traditional markets. It's a city that never sleeps!
+          </p>
+          
+          <center>
+            <img src="suramadu.png" alt="The Suramadu Bridge connecting Surabaya and Madura Island" style="border: 2px solid black; margin-top: 10px; margin-bottom: 5px;">
+          </center>
+
+          <h2><u>Fun Facts!</u></h2>
+          <ul>
+            <li>The name "Surabaya" is believed to have come from the words <b>"sura" (shark)</b> and <b>"baya" (crocodile)</b>.</li>
+            <li>It has one of the largest Chinatowns in Indonesia.</li>
+            <li>The city is known for its wide, clean streets and numerous beautiful city parks.</li>
+          </ul>
+
+        </section>
+      </main>
+ 
+    <!-- Closing .layout: -->
+    </div>
+        <script>
+      const music = document.getElementById('background-music');
+      const playPauseBtn = document.getElementById('play-pause-btn');
+
+      playPauseBtn.addEventListener('click', () => {
+        if (music.paused) {
+          music.play();
+          playPauseBtn.textContent = 'Pause Music';
+        } else {
+          music.pause();
+          playPauseBtn.textContent = 'Play Music';
+        }
+      });
+    </script>
+
+  </body>
+</html>

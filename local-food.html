@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- Site title -->
+    <title>Local Food - Nashwan Rasyid Muhammad's Website</title>
+
+    <!-- Site description -->
+    <meta content="A page about local food from my hometown, Surabaya." name="description" />
+
+    <!-- Setting character encoding and viewport size. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FavIcon -->
+    <link href="favicon.ico" rel="icon" type="image/x-icon" />
+
+    <!-- CSS -->
+    <link href="./style.css" rel="stylesheet" />
+    
+    <script>
+      // Template generated with petrapixel's layout generator.
+      console.log("%cTemplate generated with petrapixel's layout generator: https://petrapixel.neocities.org/coding/layout-generator", "font-size: 14pt; color: #922a45; background: #ffd3ef");
+    </script>
+  </head>
+  <body>
+    <audio id="background-music" src="semanggisuroboyo.mp3" loop></audio>
+    <!-- Skip-to-content link for keyboard users -->
+    <a href="#content" id="skip-to-content-link">Skip to content</a>
+
+    <div class="layout">
+ 
+      <!-- =============================================== -->
+      <!-- HEADER -->
+      <!-- =============================================== -->
+
+      <header>
+        <div class="header-content">
+          <div class="header-title">Nashwan Rasyid Muhammad's Website</div>
+          
+          <!-- NAVIGATION -->
+          <nav>
+            <ul>
+              <li><a href="./index.html">Homepage</a></li>
+              <li><a href="./profile.html">Profile</a></li>
+              <li><a href="./hometown.html">Hometown</a></li>
+              <li><a href="./local-food.html">Local Food</a></li>
+              <li><a href="./tourist-places.html">Tourist Places</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main id="content">
+
+        <!-- =============================================== -->
+        <!-- MAIN CONTENT -->
+        <!-- =============================================== -->
+
+        <section>
+          <Center>
+            <h1>
+            ~*~ Surabaya's Culinary Delights! ~*~
+          </h1>
+          </Center>
+          
+          <marquee behavior="scroll" direction="left" style="font-weight: bold; color: navy;">
+            Makanan Surabaya!
+          </marquee>
+
+        <button id="play-pause-btn" style="display: block; margin: 10px auto; padding: 5px 10px; cursor: pointer;">Play Music</button>
+
+
+          <p>
+            Surabaya has loads of must try foods, because of its unique location, the food scene is Surabaya is incredibly diverse. That said, Surabaya also has a bunch of local foods you have to try.
+          </p>
+
+          <h2>Semanggi Suroboyo</h2>
+          <p>
+            <b>Semanggi Suroboyo</b> is a very unique and traditional salad. The main ingredient is boiled <i>semanggi</i> (clover) leaves, which are mixed with bean sprouts. The real star is the sauce! It's a sweet and savory dressing made from sweet potato and peanuts. It's usually served on a banana leaf and eaten with <i>krupuk puli</i> (rice crackers). Semanggi Suroboyo holds a special place in Surabaya, so much so there's even a bus line named "Semanggi"
+          </p>
+          
+          <center>
+            
+            <img src="semanggi.jpg" alt="A serving of Semanggi Suroboyo" style="border: 4px ridge green; margin-top: 10px; margin-bottom: 5px;">
+          </center>
+
+          <h2>Rawon Setan</h2>
+          <p>
+            Now for something legendary... <b>Rawon Setan</b>! Rawon is a rich, black beef soup. The deep black color comes from the <i>keluak</i> nut, which gives it a uniquely nutty and savory flavor. The name "Setan" (which means devil) was given to this specific stall because it originally opened late at night and was famous for its spicy kick! It's the perfect meal for a late-night food adventure.
+          </p>
+          
+          <center>
+            
+            <img src="rawonsetan.jpg" alt="A bowl of Rawon Setan beef soup" style="border: 4px ridge maroon; margin-top: 10px; margin-bottom: 5px;">
+          </center>
+
+        </section>
+      </main>
+ 
+    <!-- Closing .layout: -->
+    </div>
+    <script>
+      const music = document.getElementById('background-music');
+      const playPauseBtn = document.getElementById('play-pause-btn');
+
+      playPauseBtn.addEventListener('click', () => {
+        if (music.paused) {
+          music.play();
+          playPauseBtn.textContent = 'Pause Music';
+        } else {
+          music.pause();
+          playPauseBtn.textContent = 'Play Music';
+        }
+      });
+    </script>
+
+  </body>
+</html>
+

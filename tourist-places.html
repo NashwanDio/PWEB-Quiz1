@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- Site title -->
+    <title>Tourist Places - Nashwan Rasyid Muhammad's Website</title>
+
+    <!-- Site description -->
+    <meta content="A guide to tourist attractions in my hometown, Surabaya." name="description" />
+
+    <!-- Setting character encoding and viewport size. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FavIcon -->
+    <link href="favicon.ico" rel="icon" type="image/x-icon" />
+
+    <!-- CSS -->
+    <link href="./style.css" rel="stylesheet" />
+    
+    <script>
+      // Template generated with petrapixel's layout generator.
+      console.log("%cTemplate generated with petrapixel's layout generator: https://petrapixel.neocities.org/coding/layout-generator", "font-size: 14pt; color: #922a45; background: #ffd3ef");
+    </script>
+  </head>
+  <body>
+    <audio id="background-music" src="rekayorek.mp3" loop></audio>
+    <!-- Skip-to-content link for keyboard users -->
+    <a href="#content" id="skip-to-content-link">Skip to content</a>
+
+    <div class="layout">
+ 
+      <!-- =============================================== -->
+      <!-- HEADER -->
+      <!-- =============================================== -->
+
+      <header>
+        <div class="header-content">
+          <div class="header-title">Nashwan Rasyid Muhammad's Website</div>
+          
+          <!-- NAVIGATION -->
+          <nav>
+            <ul>
+              <li><a href="./index.html">Homepage</a></li>
+              <li><a href="./profile.html">Profile</a></li>
+              <li><a href="./hometown.html">Hometown</a></li>
+              <li><a href="./local-food.html">Local Food</a></li>
+              <li><a href="./tourist-places.html">Tourist Places</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main id="content">
+
+        <!-- =============================================== -->
+        <!-- MAIN CONTENT -->
+        <!-- =============================================== -->
+
+        <section>
+          <Center>
+            <h1>
+            ~*~ Come Visit Surabaya's Best Spots! ~*~
+          </h1>
+          </Center>
+
+          <marquee behavior="alternate" scrollamount="4" style="font-weight: bold; color: green;">
+            Don't forget your camera!
+          </marquee>
+
+          <button id="play-pause-btn" style="display: block; margin: 10px auto; padding: 5px 10px; cursor: pointer;">Play Music</button>
+
+
+          <p>
+            Ready to explore? Surabaya has so many cool places to see, from modern streets to historical corners. Here are two must-visit destinations that show the different sides of the city.
+          </p>
+
+          <h2>Jalan Tunjungan (Tunjungan Street)</h2>
+          <p>
+            This is the historic heart of modern Surabaya! <b>Jalan Tunjungan</b> is one of the most iconic streets in the city, famous for its beautiful blend of new shops and old Dutch colonial architecture. It's the perfect place for an evening stroll. The street is lined with cafes, boutiques, and historic hotels. It's so famous, there's even a classic song about it, <i>"Rek Ayo Rek Mlaku-Mlaku nang Tunjungan"</i> (Hey friends, let's go for a walk on Tunjungan).
+          </p>
+          
+          <center>
+            <img src="jalantunjungan2.jpg" alt="A vibrant Jalan Tunjungan at night" style="border: 4px groove blue; margin-top: 10px; margin-bottom: 5px;">
+          </center>
+
+          <h2>Kota Tua (Old Town)</h2>
+          <p>
+            If you want to step back in time, you have to visit <b>Kota Tua</b>, or the Old Town area. This part of the city, centered around the famous <i>Jembatan Merah</i> (Red Bridge), was the original trading hub. You'll find old warehouses, offices, and buildings with stunning Dutch, Chinese, and Arabian architectural influences. It's a fantastic area for photography and learning about the city's rich history. Don't miss the House of Sampoerna, a fascinating museum in the area!
+          </p>
+          
+          <center>
+            <img src="kota-lama.jpg" alt="An old colonial building in Surabaya's Old Town" style="border: 4px groove red; margin-top: 10px; margin-bottom: 5px;">
+
+          </center>
+        </section>
+      </main>
+ 
+    <!-- Closing .layout: -->
+    </div>
+    <script>
+      const music = document.getElementById('background-music');
+      const playPauseBtn = document.getElementById('play-pause-btn');
+
+      playPauseBtn.addEventListener('click', () => {
+        if (music.paused) {
+          music.play();
+          playPauseBtn.textContent = 'Pause Music';
+        } else {
+          music.pause();
+          playPauseBtn.textContent = 'Play Music';
+        }
+      });
+    </script>
+  </body>
+</html>
